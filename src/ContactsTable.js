@@ -2,9 +2,11 @@ import React, {useState, useEffect} from 'react';
 
 function ContactsTable(){
   const [contacts, setContacts] = useState([]);
-
+  
+  // GET Contacts list API call
   async function fetchContacts(){
     try{
+      // Base URL defined in package.json to avoid CORS errors
       const response = await fetch('/api/assessment/contacts');
       if (!response.ok) {
         console.error('Failed to fetch contacts:', response.status);
@@ -28,6 +30,7 @@ function ContactsTable(){
       fetchContacts();
       console.log('Contacts table is fetched again');
     }
+    // Listen to the event created in ContactForm to trigger the Contacts list refresh
     window.addEventListener('contactAdded', handleContactAdded);
     
     // Cleanup event listener on unmount

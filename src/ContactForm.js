@@ -42,7 +42,6 @@ function ContactForm() {
 
       // Use a browser's custom event to notify ContactsTable component
       const event = new Event('contactAdded');
-      // console.log('Dispatching contactAdded event')
       window.dispatchEvent(event);
       alert('Contact added successfully!');
 
