@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+div {
+  font-family: "Lexend Deca";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+table {
+  width: auto;
+  border-collapse: collapse;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ff5c35;
+  color: white;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+tr {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+tr:hover {background-color: #ddd;}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  padding-top: 12px;
+  border-top: 2px solid #ddd;
+}
+
+input {
+  width : 20%;
+}
+
+button {
+  font-family: "Lexend Deca";
+  background-color: #ff5c35;
+  color: white;
+  font-size: large;
+  cursor: pointer;
 }
